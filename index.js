@@ -1,0 +1,1 @@
+exports.MED = require('./lib/med').MED;

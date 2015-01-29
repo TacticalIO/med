@@ -1,0 +1,20 @@
+{
+	"DataType1": {
+		"timestamp": { "type": "uint64", "endianness": "littleEndian" },
+		"toto": { "type": "uint8" }
+	},
+	"MsgType1": {
+		"head": { "type": "uint64", "endianness": "littleEndian" }, 
+		"source": { "type": "uint16", "endianness": "littleEndian" },
+		"timestamp": { "type": "uint64", "endianness": "bigEndian" },
+		"nbPositions": { "type": "uint8" }, 
+		"positions": { "type": "DataType1", "occurs": "nbPositions" },
+		"type": { "type": "uint8" },
+		"someData": { "type": "uint8", "occurs": 10 },  
+		"trainType": { "type": "uint32", "endianness": "littleEndian" },
+		"carrierFreq": { "type": "uint8" },
+		"td": { "type": "double" },
+		"lowFreqName": { "type": "string", "size": 20 },
+		"end": { "type": "uint16", "endianness": "bigEndian" }
+	}
+}
