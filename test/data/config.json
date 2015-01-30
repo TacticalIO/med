@@ -1,5 +1,33 @@
 {
-	"specs": [
-		"abaretest.json"
-	]
+	"specsFiles": [
+		"./test/data/abaretest.specs"
+	],
+	"endpoints": {
+		"myLittleServer": {
+			"type": "server",
+			"protocol": "tcp",
+			"host": "127.0.0.1",
+			"port": 13031,
+			"remote": {
+				"myLittleClient": {
+					"type": "client",
+					"protocol": "tcp",
+					"host": "",
+					"port": 13031,
+					"messages": {
+						"msg2": {
+							"klass": "MsgType1",
+							"type": "out"
+						}
+					}
+				}
+			},
+			"messages": {
+				"msg1": {
+					"klass": "MsgType1",
+					"type": "in"
+				}
+			}
+		}
+	}
 }
