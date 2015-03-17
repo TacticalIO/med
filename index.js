@@ -1,1 +1,1 @@
-exports.MED = require('./lib/med').MED;
+exports.Med = require('./lib/med').Med;
