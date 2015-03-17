@@ -1,6 +1,6 @@
 {
   "name": "med",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Message Encoder Decoder",
   "main": "index.js",
   "scripts": {
